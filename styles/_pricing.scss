@@ -1,0 +1,36 @@
+.pricing {
+  background: $primary-cyan;
+  border-bottom-left-radius: 8px;
+}
+
+.pricing-text {
+  h3 {
+    margin-bottom: 1rem;
+    font-size: 2.7rem;
+    position: relative;
+  }
+  h3::after {
+    content: 'per month';
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: $light-gray;
+    position: absolute;
+    top: 7px;
+    left: 6rem;
+  }
+  p {
+    font-size: 1.5rem;
+    color: $light-gray;
+    margin-bottom: 3rem;
+  }
+  .sign-up-btn {
+    height: 5rem;
+    border-radius: 5px;
+    border: none;
+    background: $primary-bright-yellow;
+    color: white;
+    font-size: 1.6rem;
+    box-shadow: 0px 2px 5px #727272;
+    cursor: pointer;
+  }
+}

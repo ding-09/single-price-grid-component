@@ -1,0 +1,60 @@
+$primary-cyan: hsl(179, 62%, 43%);
+$primary-bright-yellow: hsl(71, 73%, 54%);
+$light-gray: hsl(204, 43%, 93%);
+$grayish-blue: hsl(218, 22%, 67%);
+$text: 1.6rem;
+
+@import 'global';
+@import 'main';
+@import 'intro';
+@import 'pricing';
+@import 'about';
+@import 'footer';
+
+@media screen and (max-width: 650px) {
+  .grid-container {
+    position: relative;
+    margin: auto;
+    width: 65%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform: translate(0%, 0%);
+    grid-template-columns: auto;
+    grid-template-rows: 1fr auto auto;
+    height: 100%;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  .intro {
+    grid-column: auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  .intro-text {
+    padding-bottom: 2rem;
+  }
+  .pricing {
+    border-radius: 0;
+  }
+  .pricing-text {
+    width: 85%;
+  }
+  .about-us {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  .pricing-text,
+  .about-text {
+    padding-top: 2.5rem;
+    padding-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .grid-container {
+    width: 100%;
+    grid-template-columns: 80%;
+    justify-content: center;
+  }
+}

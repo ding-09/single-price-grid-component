@@ -1,0 +1,15 @@
+.about-us {
+  background: hsl(179, 62%, 47%);
+  border-bottom-right-radius: 8px;
+}
+
+.about-text {
+  ul {
+    list-style: none;
+    color: $light-gray;
+    li {
+      font-size: 1.4rem;
+      padding-bottom: 0.3rem;
+    }
+  }
+}

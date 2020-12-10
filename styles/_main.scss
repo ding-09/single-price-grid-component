@@ -1,0 +1,18 @@
+main {
+  background: $light-gray;
+  min-height: 95vh;
+  position: relative;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 21rem;
+  width: 63.5rem;
+  height: 47.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 6px;
+}
