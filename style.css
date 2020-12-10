@@ -65,6 +65,7 @@ main {
   font-size: 1.5rem;
   color: var(--grayish-blue);
   line-height: 1.5;
+  width: 90%;
 }
 
 .pricing {
@@ -145,4 +146,42 @@ main {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 650px) {
+  .grid-container {
+    position: relative;
+    margin: auto;
+    width: 50%;
+    top: 0;
+    left: 0;
+    transform: translate(0%, 0%);
+    grid-template-columns: 30rem;
+    grid-template-rows: 1fr 24rem 24rem;
+    height: 100%;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  .intro {
+    grid-column: auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  .intro-text {
+    padding-bottom: 2rem;
+  }
+  .pricing {
+    border-radius: 0;
+  }
+  .pricing-text {
+    width: 85%;
+  }
+  .about-us {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  .pricing-text,
+  .about-text {
+    padding-top: 2.5rem;
+  }
 }
